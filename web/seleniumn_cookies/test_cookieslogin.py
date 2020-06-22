@@ -5,6 +5,7 @@
 #   故使用当前网页复用的方式进入网页获取并存储cookies（只适用于仅打开一个浏览器窗口的情况）
 #       a.terminal 中开启浏览器 本地选择一个端口用于与chrome（设置其debugging-port）远程通信，
 #         chrome --remote-debugging-port=9222
+#       本地mac：Google\ Chrome --remote-debugging-port=9222
 #       b.py文件中建立login下的setup，teardowm，与操作方法
 #       b.setup中实例化options类(chromedriver下)，并将其属性debugger_address赋值(与debugging-port的一致)，确保driver与chrome的通信
 #       c.在实例化webdriver chrome时，并将其属性options赋值为实例化的options
@@ -55,13 +56,13 @@ class TestCookieLogin():
         db=shelve.open('cookies')
         cookies=db['cookie']
         for cookie in cookies:
-            if "expire" in cookie.keys():
-                cookies.pop('expire')
+            if 'expiry' in cookie.keys():
+                cookie.pop('expiry')
             self.driver.add_cookie(cookie)
         self.driver.get('https://work.weixin.qq.com/wework_admin/frame')
         self.driver.find_element_by_class_name('frame_nav_item_title').click()
         sleep(3)
-        db.close()
+        # db.close()
 
 #-----------------------------------------------------------------------------------------
 #  复用浏览器 课堂
