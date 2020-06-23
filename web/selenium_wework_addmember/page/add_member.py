@@ -30,5 +30,5 @@ class AddMember(BasePage):
             cur_page=self.update_page()[0]
             if cur_page==total_page:
                 return False
-            self.find(By.CSS_SELECTOR,'.ww_commonImg_PageNavArrowRightNormal').click()
+            self.find(By.CSS_SELECTOR,'.js_next_page').click()
 
