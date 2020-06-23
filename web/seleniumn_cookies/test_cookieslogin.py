@@ -45,7 +45,6 @@ class TestGetCookie():
         self.driver.find_element_by_class_name("frame_nav_item_title").click()
         db.close()
 
-
 class TestCookieLogin():
     def setup_method(self):
         self.driver = webdriver.Chrome()
@@ -60,9 +59,9 @@ class TestCookieLogin():
                 cookie.pop('expiry')
             self.driver.add_cookie(cookie)
         self.driver.get('https://work.weixin.qq.com/wework_admin/frame')
-        self.driver.find_element_by_class_name('frame_nav_item_title').click()
+        self.driver.find_element(By.ID,'menu_contacts').click()
         sleep(3)
-        # db.close()
+        db.close()
 
 #-----------------------------------------------------------------------------------------
 #  复用浏览器 课堂
