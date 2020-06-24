@@ -45,21 +45,15 @@ class TestXueqiuLu:
         # self.driver.find_element(MobileBy.ID,"com.xueqiu.android:id/tv_agree").click()
         self.driver.find_element(MobileBy.ID, "com.xueqiu.android:id/home_search").click()
         self.driver.find_element(MobileBy.ID, "com.xueqiu.android:id/search_input_text").send_keys(searchdata)
+        sleep(3)
         self.driver.find_element(MobileBy.XPATH, f"//*[@text='{clicktext}']").click()
-        locator = (MobileBy.ID, "com.xueqiu.android:id/followed_btn")
-        WebDriverWait(self.driver,30).until(expected_conditions.element_to_be_clickable(locator))
-        ele = self.driver.find_element(*locator)
-        print(ele.text)
-        if ele.text == '加自选':
-            ele.click()
-        assert ele.text == '已添加'
-        self.driver.find_element(MobileBy.ID, "com.xueqiu.android:id/action_close").click()
 
-        # el4 = self.driver.find_elements(MobileBy.XPATH,
-        #                                 f"//*[@text='{clicktext}']/../..//*[@text='加自选']")
-        # if len(el4) > 0:
-        #     el4[0].click()
-        #     self.driver.find_element(MobileBy.XPATH,
-        #                              f"//*[@text='{clicktext}']/../..//*[@text='已添加']")
-        # else:
-        #     print("已加自选")
+        # locator = (MobileBy.XPATH, f"//*[@text='{clicktext}']/../..//*[@text='加自选']")
+        ele = self.driver.find_elements(MobileBy.XPATH, f"//*[@text='{clicktext}']/../..//*[@text='加自选']")
+        if len(ele) >0:
+            # WebDriverWait(self.driver, 10).until(expected_conditions.element_to_be_clickable(locator))
+            ele[0].click()
+            self.driver.find_elements(MobileBy.XPATH, f"//*[@text='{clicktext}']/../..//*[@text='已添加']")
+        else:
+            print('已添加')
+        self.driver.find_element(MobileBy.ID, "com.xueqiu.android:id/action_close").click()
