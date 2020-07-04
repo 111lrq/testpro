@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
-from app.appium_xueqiu.page.base_page import BasePage
-from app.appium_xueqiu.page.search import Search
+from app.appium_xueqiuframework.page.base_page import BasePage
+from app.appium_xueqiuframework.page.search import Search
 
 
 class Market(BasePage):

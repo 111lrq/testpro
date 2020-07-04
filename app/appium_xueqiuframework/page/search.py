@@ -2,7 +2,7 @@ import pytest
 from appium.webdriver import WebElement
 from appium.webdriver.common.mobileby import MobileBy
 
-from app.appium_xueqiu.page.base_page import BasePage
+from app.appium_xueqiuframework.page.base_page import BasePage
 
 
 class Search(BasePage):

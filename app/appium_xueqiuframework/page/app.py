@@ -1,7 +1,7 @@
 from appium import webdriver
 
-from app.appium_xueqiu.page.base_page import BasePage
-from app.appium_xueqiu.page.main import Main
+from app.appium_xueqiuframework.page.base_page import BasePage
+from app.appium_xueqiuframework.page.main import Main
 
 
 class App(BasePage):

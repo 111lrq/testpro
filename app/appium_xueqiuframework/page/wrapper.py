@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 
 def handle_black(func):
     def wrapper(*args, **kwargs):
-        from app.appium_xueqiu.page.base_page import BasePage
+        from app.appium_xueqiuframework.page.base_page import BasePage
         _black_list = [
             # 伪造弹窗，将中间一步操作作为黑名单进行
             # self.find(By.XPATH, '//*[contains(@resource-id,"action_search"]')

@@ -1,4 +1,4 @@
-from app.appium_xueqiu.page.app import App
+from app.appium_xueqiuframework.page.app import App
 
 
 class TestSearch:
