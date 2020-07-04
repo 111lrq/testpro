@@ -8,6 +8,7 @@ def handle_black(func):
             # 伪造弹窗，将中间一步操作作为黑名单进行
             # self.find(By.XPATH, '//*[contains(@resource-id,"action_search"]')
             # (By.XPATH, '//*[contains(@resource-id,"action_search"]'),
+            (By.ID, 'com.xueqiu.android:id/action_search'),
             (By.XPATH, '//*[@text="确认"]'),
             (By.XPATH, "//*[@text='下次再说']"),
             (By.XPATH, "//*[@text='确定']"),

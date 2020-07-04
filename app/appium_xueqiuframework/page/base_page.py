@@ -23,6 +23,7 @@ class BasePage:
                 else self._driver.find_element(locator, value)
         return element
 
+    # 定位后获取其text属性
 #     def find_and_gettext(self, locator, value: str = None):
 #         element: WebElement
 #         try:
