@@ -1,6 +1,5 @@
 from app.appium_xueqiuframework.page.app import App
 
-
 class TestSearch:
     def setup(self):
         self.app=App()
