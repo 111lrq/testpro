@@ -3,7 +3,7 @@
 xueqiuframework的基础之上 
 实现数据及步骤的驱动 
 优化： 
-1.基于PO的框架设计及yaml，实现步骤驱动（在basepage中解析数据） 
+1.基于PO的框架设计及yaml，步骤驱动（在basepage中解析数据） 
 2.截图（保存在images下） 
 3.生成allure报告 
 4.实现录屏(conftest,fixture) 
