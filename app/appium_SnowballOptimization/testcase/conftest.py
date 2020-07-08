@@ -6,7 +6,7 @@ import subprocess
 import pytest
 
 
-# @pytest.fixture(scope="module", autouse=True)
+@pytest.fixture(scope="module", autouse=True)
 def record_video():
     cmd = shlex.split("scrcpy --record ../results/tmp1.mp4")
     p = subprocess.Popen(cmd, shell=False, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
