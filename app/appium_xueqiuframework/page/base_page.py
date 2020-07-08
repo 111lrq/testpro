@@ -1,6 +1,5 @@
 from appium.webdriver import WebElement
 from appium.webdriver.webdriver import WebDriver
-
 from app.appium_xueqiuframework.page.wrapper import handle_black
 
 

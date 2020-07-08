@@ -1,7 +1,6 @@
 import pytest
 from appium.webdriver import WebElement
 from appium.webdriver.common.mobileby import MobileBy
-
 from app.appium_xueqiuframework.page.base_page import BasePage
 
 

@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
 
-
 def handle_black(func):
     def wrapper(*args, **kwargs):
         from app.appium_xueqiuframework.page.base_page import BasePage

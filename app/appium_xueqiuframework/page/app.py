@@ -1,5 +1,4 @@
 from appium import webdriver
-
 from app.appium_xueqiuframework.page.base_page import BasePage
 from app.appium_xueqiuframework.page.main import Main
 

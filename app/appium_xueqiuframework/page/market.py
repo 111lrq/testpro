@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-
 from app.appium_xueqiuframework.page.base_page import BasePage
 from app.appium_xueqiuframework.page.search import Search
 
