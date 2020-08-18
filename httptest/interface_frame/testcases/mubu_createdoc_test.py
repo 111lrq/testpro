@@ -21,7 +21,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                 **{
                     "cache-control": "max-age=0",
                     "upgrade-insecure-requests": "1",
-                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+                    "user-agent": "HttpRunner/${get_httprunner_version()}",
                     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
                     "sec-fetch-site": "same-origin",
                     "sec-fetch-mode": "navigate",
@@ -64,7 +64,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                     "content-length": "50",
                     "accept": "application/json, text/javascript, */*; q=0.01",
                     "x-requested-with": "XMLHttpRequest",
-                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+                    "user-agent": "HttpRunner/${get_httprunner_version()}",
                     "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
                     "origin": "https://${host}",
                     "sec-fetch-site": "same-origin",
@@ -109,7 +109,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                 .with_headers(
                 **{
                     "upgrade-insecure-requests": "1",
-                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+                    "user-agent": "HttpRunner/${get_httprunner_version()}",
                     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
                     "sec-fetch-site": "same-origin",
                     "sec-fetch-mode": "navigate",
@@ -152,7 +152,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                 **{
                     "content-length": "0",
                     "accept": "application/json, text/javascript, */*; q=0.01",
-                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+                    "user-agent": "HttpRunner/${get_httprunner_version()}",
                     "x-requested-with": "XMLHttpRequest",
                     "origin": "https://${host}",
                     "sec-fetch-site": "same-origin",
@@ -199,7 +199,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                     "content-length": "38",
                     "accept": "application/json, text/javascript, */*; q=0.01",
                     "x-requested-with": "XMLHttpRequest",
-                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+                    "user-agent": "HttpRunner/${get_httprunner_version()}",
                     "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
                     "origin": "https://${host}",
                     "sec-fetch-site": "same-origin",
@@ -248,7 +248,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                 **{
                     "content-length": "0",
                     "accept": "application/json, text/javascript, */*; q=0.01",
-                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+                    "user-agent": "HttpRunner/${get_httprunner_version()}",
                     "x-requested-with": "XMLHttpRequest",
                     "origin": "https://${host}",
                     "sec-fetch-site": "same-origin",
@@ -295,7 +295,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                     "content-length": "17",
                     "accept": "application/json, text/javascript, */*; q=0.01",
                     "x-requested-with": "XMLHttpRequest",
-                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+                    "user-agent": "HttpRunner/${get_httprunner_version()}",
                     "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
                     "origin": "https://${host}",
                     "sec-fetch-site": "same-origin",
@@ -343,7 +343,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                 .with_headers(
                 **{
                     "upgrade-insecure-requests": "1",
-                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+                    "user-agent": "HttpRunner/${get_httprunner_version()}",
                     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
                     "sec-fetch-site": "same-origin",
                     "sec-fetch-mode": "navigate",
@@ -386,7 +386,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                 .with_headers(
                 **{
                     "upgrade-insecure-requests": "1",
-                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+                    "user-agent": "HttpRunner/${get_httprunner_version()}",
                     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
                     "sec-fetch-site": "same-origin",
                     "sec-fetch-mode": "navigate",
@@ -431,7 +431,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                 **{
                     "content-length": "0",
                     "accept": "application/json, text/javascript, */*; q=0.01",
-                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+                    "user-agent": "HttpRunner/${get_httprunner_version()}",
                     "x-requested-with": "XMLHttpRequest",
                     "origin": "https://${host}",
                     "sec-fetch-site": "same-origin",
@@ -480,7 +480,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                     "content-length": "38",
                     "accept": "application/json, text/javascript, */*; q=0.01",
                     "x-requested-with": "XMLHttpRequest",
-                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+                    "user-agent": "HttpRunner/${get_httprunner_version()}",
                     "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
                     "origin": "https://${host}",
                     "sec-fetch-site": "same-origin",
@@ -528,7 +528,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                 **{
                     "content-length": "0",
                     "accept": "application/json, text/javascript, */*; q=0.01",
-                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+                    "user-agent": "HttpRunner/${get_httprunner_version()}",
                     "x-requested-with": "XMLHttpRequest",
                     "origin": "https://${host}",
                     "sec-fetch-site": "same-origin",
