@@ -8,7 +8,9 @@ from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
 class TestCaseMubuCreatedoc(HttpRunner):
     config = Config("testcase description").verify(False).base_url("https://${host}").variables(
         **{
-            "host": "mubu.com"
+            "host": "mubu.com",
+            "phone": "18210850325",
+            "password": "qweqaz123"
         })
 
     teststeps = [
@@ -94,7 +96,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                 }
             )
                 .with_data(
-                {"phone": "18210850325", "password": "qweqaz123", "remember": "true"}
+                {"phone": "$phone", "password": "$password", "remember": "true"}
             )
                 .validate()
                 .assert_equal("status_code", 200)
@@ -235,6 +237,9 @@ class TestCaseMubuCreatedoc(HttpRunner):
                 .assert_equal("status_code", 200)
                 .assert_equal("body.code", 0)
                 .assert_equal("body.msg", None)
+                .assert_equal("body.data.folderId", "0")
+                .assert_length_greater_than("body.data.documents", 5)
+                # .assert_equal("body.data.documents[13].name", "demo")
         ),
         Step(
             RunRequest("/api/message/get_message_unread")
