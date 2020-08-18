@@ -238,7 +238,7 @@ class TestCaseMubuCreatedoc(HttpRunner):
                 .assert_equal("body.code", 0)
                 .assert_equal("body.msg", None)
                 .assert_equal("body.data.folderId", "0")
-                .assert_length_greater_than("body.data.documents", 5)
+                .assert_length_greater_than("body.data.documents", "${sum_two(3, 2)}")
                 # .assert_equal("body.data.documents[13].name", "demo")
         ),
         Step(
